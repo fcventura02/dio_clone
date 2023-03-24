@@ -1,6 +1,6 @@
 import Logo from "../../assets/logo";
 import Button from "../Button";
-import { Container, Input, Menu, MenuRight, Row, SearchInputContainer, UserPicture, Wrapper } from "./style";
+import { Container, Hidden, Input, Menu, MenuRight, Row, SearchInputContainer, UserPicture, Wrapper } from "./style";
 
 export default function Header() {
   return (
@@ -14,9 +14,11 @@ export default function Header() {
           <Menu>Live Code</Menu>
           <Menu>Global</Menu>
         </Row>
-        <Row >
-          <UserPicture src="https://github.com/fcventura02.png" alt="Thumb do usuário" />
-        </Row>
+        <Hidden>
+          <Row>
+            <UserPicture src="https://github.com/fcventura02.png" alt="Thumb do usuário" />
+          </Row>
+        </Hidden>
         <Row>
           <MenuRight>Home</MenuRight>
           <Button title="Entrar" />

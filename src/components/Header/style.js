@@ -32,7 +32,7 @@ export const Wrapper = styled.header`
 `
 
 export const SearchInputContainer = styled.div`
-    width: 175px;
+    width: 275px;
     height: 30px;
     background: #2D2D37;
     border-radius: 8px;
@@ -52,7 +52,7 @@ export const SearchInputContainer = styled.div`
 export const Menu = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 25px;
     color: #fff;
     margin-right: 12px;
@@ -61,7 +61,7 @@ export const Menu = styled.a`
 export const MenuRight = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 25px;
     color: #fff;
     margin-right: 12px;
@@ -76,8 +76,13 @@ export const UserPicture = styled.img`
 
 export const Input = styled.input`
     background: transparent;
+    font-size: 18px;
     flex: 1;
     border: 0;
     color: #fff;
     outline: none;
+`
+
+export const Hidden = styled.div`
+    display: none;
 `
