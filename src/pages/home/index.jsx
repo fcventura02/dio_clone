@@ -22,7 +22,7 @@ export default function Home() {
         <Button variant="secondary" title="Começar Agora" />
         </div>
         <div>
-            <img src={bannerImage} alt="" />
+            <img width="100%" src={bannerImage} alt="" />
         </div>
       </Container>
     </>
