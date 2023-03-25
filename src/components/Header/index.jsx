@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Arrow from "../../assets/arrow";
 import Logo from "../../assets/logo";
 import Button from "../Button";
@@ -13,6 +14,10 @@ import {
 } from "./style";
 
 export default function Header({ autenticado=false }) {
+  const navigate = useNavigate();
+  const handleClickNavigation = (navigation)=>{
+    navigate(navigation)
+  }
   return (
     <Wrapper>
       <Container>
@@ -39,9 +44,9 @@ export default function Header({ autenticado=false }) {
             </>
           ) : (
             <>
-              <MenuRight>Home</MenuRight>
-              <Button title="Entrar" />
-              <Button title="Cadastrar" />
+              <MenuRight onClick={()=>handleClickNavigation("/")} >Home</MenuRight>
+              <Button onClick={()=>handleClickNavigation("/login")} title="Entrar" />
+              <Button onClick={()=>handleClickNavigation("/login")} title="Cadastrar" />
             </>
           )}
         </Row>

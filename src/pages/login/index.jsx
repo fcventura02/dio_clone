@@ -4,8 +4,14 @@ import { Collumn, Container, Row, TextContent, Title, Wrapper } from "./style";
 import Input from "../../components/Input";
 import Email from "../../assets/email";
 import Password from "../../assets/password";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleClickSignIn = ()=>{
+    navigate("/feed")
+  }
   return (
     <>
       <Header />
@@ -35,7 +41,7 @@ export default function Login() {
               />
               <Button
                 title="Entrar"
-                onClick={() => {}}
+                onClick={handleClickSignIn}
                 variant="secondary"
                 size="100%"
               />
