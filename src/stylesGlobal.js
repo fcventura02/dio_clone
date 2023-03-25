@@ -8,6 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Open Sans";
 }
 
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 body{
     max-width: 100vw;
     background-color: #1E192C;
