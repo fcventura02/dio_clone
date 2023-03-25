@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     max-width: 80%;
-    height: 47px;
+    height: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ export const Column = styled.div`
 export const Wrapper = styled.header`
     background-color: #151515;
     width: 100%;
-    height: 47px;
+    height: 53px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,8 +68,8 @@ export const MenuRight = styled.a`
     text-decoration: none;
 `
 export const UserPicture = styled.img`
-    width: 32px;
-    height: 32px;
+    width: 41px;
+    height: 41px;
     border-radius: 100%;
     border: 2px solid #fff;
 `
